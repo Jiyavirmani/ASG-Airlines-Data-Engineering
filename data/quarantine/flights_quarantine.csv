@@ -1,0 +1,2 @@
+flight_id,airline,source,destination,departure_time,arrival_time,duration,airline_missing_flag,airline_unknown_flag,invalid_timestamp_flag,calculated_duration_minutes,temporal_anomaly_flag,overnight_flag,source_duration_minutes,duration_difference_minutes,duration_mismatch_flag,quarantine_reason
+SJ192,SpiceJet,HYD,BOM,2026-04-19 18:45:42.000,2026-04-18 23:45:42.000,1899-12-29 05:00:00,False,False,False,-1140.0,True,True,,,False,INVALID_TIMESTAMP_OR_TEMPORAL_ANOMALY

@@ -1,0 +1,11 @@
+kpi,value
+Total Flights,1004.0
+Total Bookings,1000.0
+Valid Payment Transactions,922.0
+Average Flight Duration (Minutes),164.48519332669326
+Median Flight Duration (Minutes),166.0
+Overnight Flights,122.0
+Confirmed Booking Rate (%),32.0
+Cancellation Rate (%),31.4
+Pending Booking Rate (%),29.099999999999998
+Total Payment Value,7385142.98

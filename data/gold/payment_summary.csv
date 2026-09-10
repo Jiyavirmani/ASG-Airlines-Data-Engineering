@@ -1,0 +1,4 @@
+payment_method,total_transactions,total_amount,average_payment_amount
+CARD,300,2400812.04,8002.7068
+NETBANKING,291,2365644.17,8129.3614089347075
+UPI,331,2618686.77,7911.440392749245

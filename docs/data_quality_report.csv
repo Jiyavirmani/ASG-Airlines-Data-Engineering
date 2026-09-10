@@ -1,0 +1,17 @@
+dataset,metric,value
+flights,total_records,1005
+flights,missing_airline,39
+flights,unknown_airline,69
+flights,invalid_timestamps,0
+flights,temporal_anomalies,1
+flights,overnight_flights,123
+flights,duration_mismatches,0
+bookings,total_records,1000
+bookings,invalid_status,45
+bookings,orphan_passenger_references,0
+bookings,orphan_flight_references,0
+passengers,total_records,1039
+passengers,missing_date_of_birth,0
+payments,total_records,1000
+payments,invalid_amount,78
+payments,orphan_booking_references,0

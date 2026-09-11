@@ -2,9 +2,9 @@ from pathlib import Path
 import pandas as pd
 
 
-# ---------------------------------------------------------
+
 # Paths
-# ---------------------------------------------------------
+
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
@@ -12,9 +12,9 @@ GOLD_DIR = PROJECT_ROOT / "data" / "gold"
 DOCS_DIR = PROJECT_ROOT / "docs"
 
 
-# ---------------------------------------------------------
+
 # Input files
-# ---------------------------------------------------------
+
 
 KPI_FILE = GOLD_DIR / "kpi_summary.csv"
 QUALITY_FILE = DOCS_DIR / "data_quality_report.csv"
@@ -25,9 +25,8 @@ PAYMENTS_FILE = GOLD_DIR / "fact_payments.csv"
 OUTPUT_FILE = GOLD_DIR / "dashboard_metrics.csv"
 
 
-# ---------------------------------------------------------
 # Helper function
-# ---------------------------------------------------------
+
 
 def add_metric(metrics, category, metric, value, unit=""):
     metrics.append(
@@ -40,9 +39,8 @@ def add_metric(metrics, category, metric, value, unit=""):
     )
 
 
-# ---------------------------------------------------------
+
 # Main
-# ---------------------------------------------------------
 
 def main():
 
@@ -56,9 +54,9 @@ def main():
 
     metrics = []
 
-    # -----------------------------------------------------
+
     # Business KPIs
-    # -----------------------------------------------------
+
 
     for _, row in kpi.iterrows():
 
@@ -69,9 +67,9 @@ def main():
             row["value"]
         )
 
-    # -----------------------------------------------------
+
     # Data Quality Metrics
-    # -----------------------------------------------------
+
 
     for _, row in quality.iterrows():
 
@@ -84,9 +82,9 @@ def main():
             row["value"]
         )
 
-    # -----------------------------------------------------
+
     # Additional Analytical KPIs
-    # -----------------------------------------------------
+
 
     valid_flights = len(flights)
     valid_bookings = len(bookings)
@@ -190,9 +188,9 @@ def main():
         "%"
     )
 
-    # -----------------------------------------------------
+
     # Invalid Booking Percentage
-    # -----------------------------------------------------
+
 
     invalid_booking_flag = (
         bookings["invalid_status_flag"]
@@ -218,9 +216,8 @@ def main():
         "%"
     )
 
-    # -----------------------------------------------------
     # Create dashboard metrics table
-    # -----------------------------------------------------
+
 
     dashboard_metrics = pd.DataFrame(metrics)
 

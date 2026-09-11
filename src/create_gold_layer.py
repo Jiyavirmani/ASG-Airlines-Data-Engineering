@@ -9,9 +9,9 @@ GOLD_DIR = "data/gold"
 os.makedirs(GOLD_DIR, exist_ok=True)
 
 
-# ---------------------------------------------------------
+
 # Load cleaned data
-# ---------------------------------------------------------
+
 
 def load_data():
 
@@ -34,9 +34,9 @@ def load_data():
     return flights, bookings, passengers, payments
 
 
-# ---------------------------------------------------------
+
 # Flight Fact Table
-# ---------------------------------------------------------
+
 
 def create_flight_fact(flights):
 
@@ -72,9 +72,9 @@ def create_flight_fact(flights):
     return fact_flights
 
 
-# ---------------------------------------------------------
+
 # Booking Fact Table
-# ---------------------------------------------------------
+
 
 def create_booking_fact(bookings):
 
@@ -100,9 +100,9 @@ def create_booking_fact(bookings):
     return fact_bookings
 
 
-# ---------------------------------------------------------
+
 # Payment Fact Table
-# ---------------------------------------------------------
+
 
 def create_payment_fact(payments):
 
@@ -116,9 +116,8 @@ def create_payment_fact(payments):
     return fact_payments
 
 
-# ---------------------------------------------------------
 # Route Performance
-# ---------------------------------------------------------
+
 
 def create_route_summary(flights):
 
@@ -154,9 +153,9 @@ def create_route_summary(flights):
     return route_summary
 
 
-# ---------------------------------------------------------
+
 # Airline Summary
-# ---------------------------------------------------------
+
 
 def create_airline_summary(flights):
 
@@ -189,9 +188,9 @@ def create_airline_summary(flights):
     return airline_summary
 
 
-# ---------------------------------------------------------
+
 # Booking Summary
-# ---------------------------------------------------------
+
 
 def create_booking_summary(bookings):
 
@@ -215,9 +214,9 @@ def create_booking_summary(bookings):
     return booking_summary
 
 
-# ---------------------------------------------------------
+
 # Payment Summary
-# ---------------------------------------------------------
+
 
 def create_payment_summary(payments):
 
@@ -243,9 +242,9 @@ def create_payment_summary(payments):
     return payment_summary
 
 
-# ---------------------------------------------------------
+
 # Overall KPI Summary
-# ---------------------------------------------------------
+
 
 def create_kpi_summary(
     flights,
@@ -329,9 +328,9 @@ def create_kpi_summary(
     return kpi
 
 
-# ---------------------------------------------------------
+
 # Save Gold Tables
-# ---------------------------------------------------------
+
 
 def save_gold_tables(
     fact_flights,
@@ -385,9 +384,9 @@ def save_gold_tables(
     )
 
 
-# ---------------------------------------------------------
+
 # Main
-# ---------------------------------------------------------
+
 
 def main():
 

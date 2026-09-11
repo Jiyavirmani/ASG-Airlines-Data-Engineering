@@ -2,26 +2,24 @@ import os
 import pandas as pd
 
 
-# ---------------------------------------------------------
+
 # Paths
-# ---------------------------------------------------------
 
 RAW_FILE = "data/raw/UseCase - Airlines.xlsx"
 PROCESSED_DIR = "data/processed"
 QUARANTINE_DIR = "data/quarantine"
 
 
-# ---------------------------------------------------------
+
 # Setup
-# ---------------------------------------------------------
 
 os.makedirs(PROCESSED_DIR, exist_ok=True)
 os.makedirs(QUARANTINE_DIR, exist_ok=True)
 
 
-# ---------------------------------------------------------
+
 # Load data
-# ---------------------------------------------------------
+
 
 def load_data():
     print("Loading Excel workbook...")
@@ -34,9 +32,8 @@ def load_data():
     return flights, bookings, passengers, payments
 
 
-# ---------------------------------------------------------
 # Clean Flights
-# ---------------------------------------------------------
+
 
 def clean_flights(df):
 
@@ -138,9 +135,9 @@ def clean_flights(df):
     return df
 
 
-# ---------------------------------------------------------
+
 # Clean Bookings
-# ---------------------------------------------------------
+
 
 def clean_bookings(df):
 
@@ -184,9 +181,9 @@ def clean_bookings(df):
     return df
 
 
-# ---------------------------------------------------------
+
 # Clean Passengers
-# ---------------------------------------------------------
+
 
 def clean_passengers(df):
 
@@ -225,9 +222,9 @@ def clean_passengers(df):
     return df
 
 
-# ---------------------------------------------------------
+
 # Clean Payments
-# ---------------------------------------------------------
+
 
 def clean_payments(df):
 
@@ -266,9 +263,9 @@ def clean_payments(df):
     return df
 
 
-# ---------------------------------------------------------
+
 # Referential Integrity
-# ---------------------------------------------------------
+
 
 def validate_relationships(
     flights,
@@ -309,9 +306,9 @@ def validate_relationships(
     return bookings, payments
 
 
-# ---------------------------------------------------------
+
 # Save Data
-# ---------------------------------------------------------
+
 
 def save_data(
     flights,
@@ -345,9 +342,8 @@ def save_data(
     print("Files saved successfully.")
 
 
-# ---------------------------------------------------------
 # Main Pipeline
-# ---------------------------------------------------------
+
 
 def main():
 

@@ -18,9 +18,9 @@ def main():
         sheet_name="payments"
     )
 
-    # -----------------------------------------------------
+
     # Passenger DOB verification
-    # -----------------------------------------------------
+
 
     print("PASSENGER DOB CHECK")
     print("-------------------")
@@ -56,9 +56,9 @@ def main():
         parsed_dob.isna().sum()
     )
 
-    # -----------------------------------------------------
+
     # Payment amount verification
-    # -----------------------------------------------------
+
 
     print("\nPAYMENT AMOUNT CHECK")
     print("--------------------")
@@ -111,9 +111,9 @@ def main():
         total_invalid.sum()
     )
 
-    # -----------------------------------------------------
+
     # Show suspicious payment values
-    # -----------------------------------------------------
+
 
     if non_positive.sum() > 0:
 

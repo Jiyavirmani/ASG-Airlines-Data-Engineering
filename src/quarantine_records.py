@@ -6,16 +6,15 @@ PROCESSED_DIR = "data/processed"
 QUARANTINE_DIR = "data/quarantine"
 
 
-# ---------------------------------------------------------
+
 # Setup
-# ---------------------------------------------------------
+
 
 os.makedirs(QUARANTINE_DIR, exist_ok=True)
 
 
-# ---------------------------------------------------------
 # Quarantine Flights
-# ---------------------------------------------------------
+
 
 def process_flights():
 
@@ -54,9 +53,9 @@ def process_flights():
     return flights, valid, quarantine
 
 
-# ---------------------------------------------------------
+
 # Quarantine Payments
-# ---------------------------------------------------------
+
 
 def process_payments():
 
@@ -93,9 +92,7 @@ def process_payments():
     return payments, valid, quarantine
 
 
-# ---------------------------------------------------------
 # Main
-# ---------------------------------------------------------
 
 def main():
 
